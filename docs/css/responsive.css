@@ -11,7 +11,13 @@
  */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  
+  .services-block{
+    height:15vh;
+    width:20vw;
+    margin:10px;
+    background: rgba(255,255,255,1);
+    overflow:hidden;
+}
 }
 
 /** Width between 768px to 991px
@@ -19,6 +25,14 @@
  */
 
 @media (min-width: 768px) and (max-width: 991px) {
+/* Services */
+.services-block{
+    height:15vh;
+    width:25vw;
+    margin:10px;
+    background: rgba(255,255,255,1);
+    overflow:hidden;
+}
   /* Navbar */
   nav {
     padding: 10px 15px;
@@ -90,6 +104,14 @@
  */
 
 @media (max-width: 767px) {
+/* Services */
+.services-block{
+    height:25vh;
+    width:25vw;
+    margin:8px;
+    background: rgba(255,255,255,1);
+    overflow:hidden;
+}
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -161,6 +183,14 @@
  */
 
 @media (max-width: 600px) {
+/* Services */
+.services-block{
+    height:24vh;
+    width:26vw;
+    margin:10px;
+    background: rgba(255,255,255,1);
+    overflow:hidden;
+}
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -232,6 +262,15 @@
  */
 
 @media (max-width: 480px) {
+/* Services */
+.services-block{
+    height:25vh;
+    width:35vw;
+    margin:10px;
+    margin-left:5vw;
+    background: rgba(255,255,255,1);
+    overflow:hidden;
+}
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -302,6 +341,14 @@
  */
 
 @media (max-width: 320px) {
+/* Services */
+.services-block{
+    height:20vh;
+    width:40vw;
+    margin:5px;
+    background: rgba(255,255,255,1);
+    overflow:hidden;
+}
   /* Navbar */
   nav {
     padding: 20px 15px;

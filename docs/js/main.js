@@ -46,6 +46,17 @@ $(document).ready(function() {
             $('nav ul li a').removeClass('active')
             currLink.addClass('active');
             document.activeElement.blur();
+
+            if(currLink.attr('href')!='#header'){
+                   var nave= $("#main-nav");
+                   nave.removeClass("trans");
+                    nave.addClass("opaque");
+            }
+            else{
+                var nave= $("#main-nav");
+                 nave.addClass("trans");
+                 nave.removeClass("opaque");
+            }
          }
          else{
             currLink.removeClass('active');

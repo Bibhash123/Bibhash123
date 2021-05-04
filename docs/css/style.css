@@ -183,9 +183,16 @@ nav {
   width: 100%;
   padding: 5px;
   display: block;
+  transition:0.5s;
+}
+.opaque{
   -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
   box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
+}
+
+.trans{
+background: rgba(0,0,0,0);
 }
 
 .nav-menu {
@@ -366,8 +373,15 @@ transform: scale(1.1);
   display: block;
 }
 
+.services-block{
+    height:20vh;
+    width:20vw;
+    margin:10px;
+    background: rgba(255,255,255,1);
+}
+
 .services-block .separator {
-  margin: 0;
+  margin: 0 10px;
   font-size: 13px;
   line-height: 22px;
 }
@@ -376,6 +390,11 @@ transform: scale(1.1);
   font-size: 44px;
   color: #b8a07e;
   line-height: 44px;
+}
+
+.services-box{
+display:flex;
+flex-flow: row wrap;
 }
 
 
