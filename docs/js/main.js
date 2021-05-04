@@ -7,8 +7,8 @@ $(document).ready(function() {
   //  //SMOOTH SCROLL
   // ========================================================================= //
 
-
-//  $(document).on("scroll", onScroll);
+  $(document).ready(onScroll)
+  $(document).on("scroll", onScroll);
 
   $('a[href^="#"]').on('click', function(e) {
     e.preventDefault();
@@ -36,15 +36,23 @@ $(document).ready(function() {
   });
 
 
-//  function onScroll(event) {
-//    if ($('.home').length) {
-//      var scrollPos = $(document).scrollTop();
-//      $('nav ul li a').each(function() {
-//        var currLink = $(this);
-//        var refElement = $(currLink.attr("href"));
-//      });
-//    }
-//  }
+  function onScroll(event) {
+    if ($('.home').length) {
+      var scrollPos = $(document).scrollTop();
+      $('nav ul li a').each(function() {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if(scrollPos+$(window).height()/2 >= refElement.position().top &&  refElement.position().top + refElement.height() > scrollPos){
+            $('nav ul li a').removeClass('active')
+            currLink.addClass('active');
+            document.activeElement.blur();
+         }
+         else{
+            currLink.removeClass('active');
+         }
+      });
+    }
+  }
 
   // ========================================================================= //
   //  //NAVBAR SHOW - HIDE
@@ -80,7 +88,7 @@ $(document).ready(function() {
   $(function() {
     typed.typed({
       strings: ["Hi. I'M Bibhash Pran Das.", "Aspiring ML Engineer.", "Aspiring Data Scientist."],
-      typeSpeed: 100,
+      typeSpeed: 30,
       loop: true,
     });
   });
