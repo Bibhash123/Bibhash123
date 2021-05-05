@@ -410,6 +410,7 @@ background:rgba(0,0,0,0);
     margin:8px;
     background: rgba(255,255,255,1);
     transition: 0.8s;
+    text-align:center!important;
 }
 
 .services-block:hover{
@@ -515,12 +516,32 @@ background:rgba(0,0,0,0);
   margin-bottom: 30px;
   overflow: hidden;
   min-height: 260px;
+  transition: 0.8s;
 }
 
+.portfolio-thumbnail:hover {
+transform: scale(1.08);
+}
 .portfolio-thumbnail img {
   max-width: 100%;
+  max-height:40%;
+  cursor:pointer;
 }
 
+.portfolio-thumbnail span{
+    position: relative;
+    top: 10px;
+    color: black;
+    font-size:1.08rem;
+    font-weight: bold;
+}
+.portfolio-thumbnail p{
+    position:relative;
+    top:-8px;
+    font-size:0.8rem;
+    color:black;
+    font-weight:bold;
+}
 /*-----------------------------------------------------------------------------------*/
 /*  Experience
 /*-----------------------------------------------------------------------------------*/
@@ -554,10 +575,17 @@ background:rgba(0,0,0,0);
   width: 100%;
 }
 
-#journal .journal-block .journal-info {
+#journal .journal-block{
   position: relative;
 }
 
+#journal .journal-info{
+  position: relative;
+}
+
+.box{
+    background: #fff;
+}
 .journal-block .journal-info img {
     height:20vh;
     width: 50%;
@@ -741,4 +769,45 @@ background:rgba(0,0,0,0);
   position:relative;
   top:-1.2rem;
   left: 0px;
+}
+/*------------------------------------------------------------------*/
+/* popup description */
+/*------------------------------------------------------------------*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0px;
+  top: 0px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

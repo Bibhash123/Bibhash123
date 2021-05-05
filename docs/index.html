@@ -261,11 +261,11 @@
           <div class="portfolio-list">
 
             <ul class="nav list-unstyled" id="portfolio-flters">
-              <li class="filter filter-active" data-filter=".all">all</li>
-              <li class="filter" data-filter=".ml">ML</li>
+              <li class="filter  filter-active" data-filter=".ml">ML</li>
               <li class="filter" data-filter=".deployed">Deployed Apps</li>
               <li class="filter" data-filter=".research">Research</li>
               <li class="filter" data-filter=".publications">Publications</li>
+              <li class="filter" data-filter=".all">all</li>
             </ul>
 
           </div>
@@ -273,40 +273,102 @@
           <div class="portfolio-container">
 
             <div class="col-lg-4 col-md-6 portfolio-thumbnail all ml deployed">
-              <a class="popup-img" href="images/portfolio/1.jpg">
-                <img src="images/portfolio/1.jpg" alt="img">
-              </a>
+              <img src="images/portfolio/icu.png" alt="img" onclick="document.getElementById('icu-desc').style.display='block'">
+              <span>ICU Patient Health Monitoring System</span>
+              <p>Real-time health monitoring</p>
+
+              <!-- project desc -->
+              <div id ="icu-desc" class="modal">
+                <div  class="modal-content">
+                  <span class="close" onclick="document.getElementById('icu-desc').style.display='none'">&times;</span>
+                  <p align="justify">This project keeps track of patients vitals and other parameters using an IoT device. The data is fetched using an API and used
+                    by a specially designed ML model to predict life expectancy of the patient.<br>
+                  <a href="https://icu-hms.herokuapp.com" target="_blank">https://icu-hms.herokuapp.com</a></p>
+                </div>
+              </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups ml deployed research">
-              <a class="popup-img" href="images/portfolio/2.jpg">
-                <img src="images/portfolio/2.jpg"  alt="img">
-              </a>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all ml">
+              <img src="images/portfolio/colab_nst.png" alt="img" onclick="document.getElementById('nst-desc').style.display='block'">
+              <span>Neural Style Transfer with VGG-19</span>
+              <p>Implementation of research by Gatys et.al</p>
+
+              <!-- project desc -->
+              <div id ="nst-desc" class="modal">
+                <div  class="modal-content">
+                  <span class="close" onclick="document.getElementById('nst-desc').style.display='none'">&times;</span>
+                  <p align="justify">This project is an implementation of a research paper by Gatys et al. that deals with applying the style of an image to a content image
+                  by using Gram Matrices to calculate style cost.<br>
+                  <a href="https://colab.research.google.com/drive/1RJdg63KooXCs0wF4p1dOtO7taLfHvjl-?usp=sharing" target="_blank">Link to Colab Notebook</a></p>
+                </div>
+              </div>
+
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all ml deployed">
-              <a class="popup-img" href="images/portfolio/3.jpg">
-                <img src="images/portfolio/3.jpg" alt="img">
-              </a>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all ml">
+              <img src="images/portfolio/kaggle.png" alt="img" onclick="document.getElementById('k1-desc').style.display='block'">
+              <span>Mechanism of Drug Action (MoA)</span>
+              <p>Kaggle notebook</p>
+
+              <!-- project desc -->
+              <div id ="k1-desc" class="modal">
+                <div  class="modal-content">
+                  <span class="close" onclick="document.getElementById('k1-desc').style.display='none'">&times;</span>
+                  <p align="justify">This project keeps track of patients vitals and other parameters using an IoT device. The data is fetched using an API and used
+                    by a specially designed ML model to predict life expectancy of the patient.<br>
+                  <a href="https://icu-hms.herokuapp.com" target="_blank">https://icu-hms.herokuapp.com</a></p>
+                </div>
+              </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all ml deployed">
-              <a class="popup-img" href="images/portfolio/4.jpg">
-                <img src="images/portfolio/4.jpg" alt="img">
-              </a>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all ml">
+              <img src="images/portfolio/kaggle.png" alt="img" onclick="document.getElementById('k2-desc').style.display='block'">
+              <span>Chest X-ray Abnormalities Detection</span>
+              <p>Kaggle Notebook</p>
+
+              <!-- project desc -->
+              <div id ="k2-desc" class="modal">
+                <div  class="modal-content">
+                  <span class="close" onclick="document.getElementById('k2-desc').style.display='none'">&times;</span>
+                  <p align="justify">This project keeps track of patients vitals and other parameters using an IoT device. The data is fetched using an API and used
+                    by a specially designed ML model to predict life expectancy of the patient.<br>
+                  <a href="https://icu-hms.herokuapp.com" target="_blank">https://icu-hms.herokuapp.com</a></p>
+                </div>
+              </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all ml deployed">
-              <a class="popup-img" href="images/portfolio/5.jpg">
-                <img src="images/portfolio/5.jpg" alt="img">
-              </a>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all ml research">
+              <img src="images/portfolio/research.png" alt="img" onclick="document.getElementById('k3-desc').style.display='block'">
+              <span>Research on Image-Forensics</span>
+              <p>2020-Present</p>
+
+              <!-- project desc -->
+              <div id ="k3-desc" class="modal">
+                <div  class="modal-content">
+                  <span class="close" onclick="document.getElementById('k3-desc').style.display='none'">&times;</span>
+                  <p align="justify">This project keeps track of patients vitals and other parameters using an IoT device. The data is fetched using an API and used
+                    by a specially designed ML model to predict life expectancy of the patient.<br>
+                  <a href="https://icu-hms.herokuapp.com" target="_blank">https://icu-hms.herokuapp.com</a></p>
+                </div>
+              </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all publications">
-              <a class="popup-img" href="images/portfolio/6.jpg">
-                <img src="images/portfolio/6.jpg" alt="img">
-              </a>
-            </div>
+<!--            <div class="col-lg-4 col-md-6 portfolio-thumbnail all publications">-->
+<!--              <img src="images/portfolio/kaggle.png" alt="img" onclick="document.getElementById('k4-desc').style.display='block'">-->
+<!--              <span>ICU Patient Health Monitoring System</span>-->
+<!--              <p>Real-time health monitoring</p>-->
+
+<!--              &lt;!&ndash; project desc &ndash;&gt;-->
+<!--              <div id ="k4-desc" class="modal">-->
+<!--                <div  class="modal-content">-->
+<!--                  <span class="close" onclick="document.getElementById('k4-desc').style.display='none'">&times;</span>-->
+<!--                  <p align="justify">This project keeps track of patients vitals and other parameters using an IoT device. The data is fetched using an API and used-->
+<!--                    by a specially designed ML model to predict life expectancy of the patient.<br>-->
+<!--                  <a href="https://icu-hms.herokuapp.com" target="_blank">https://icu-hms.herokuapp.com</a></p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
 
           </div>
         </div>
@@ -329,15 +391,15 @@
       <div class="journal-block">
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 box">
             <div class="journal-info">
 
-              <a href="blog-single.html"><img src="images/blog-post-1.jpg" class="img-responsive" alt="img"></a>
+              <a href="blog-single.html"><img src="images/portfolio/nit_logo.png" class="img-responsive" alt="img"></a>
 
               <div class="journal-txt">
 
-                <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
-                <p class="separator">To an English person, it will seem like simplified English
+                <h4><a href="blog-single.html">Intelligent Systems Laboratory</a></h4>
+                <p class="separator">Supervisor: Prof. Manish Okade<br>2020-Present
                 </p>
 
               </div>
