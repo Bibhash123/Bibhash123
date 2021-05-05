@@ -386,10 +386,6 @@ background:rgba(192, 196, 193,0.7);
 margin:2px;
 display:flex;
 flex-flow:row wrap;
-transition:0.8s;
-}
-.group:hover{
-transform: scale(1.05);
 }
 
 .sm{
@@ -411,6 +407,11 @@ background:rgba(0,0,0,0);
     width:10vw;
     margin:8px;
     background: rgba(255,255,255,1);
+    transition: 0.8s;
+}
+
+.services-block:hover{
+    transform: scale(1.1);
 }
 
 .services-block .separator {
