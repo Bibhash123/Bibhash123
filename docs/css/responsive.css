@@ -18,6 +18,10 @@
     background: rgba(255,255,255,1);
     overflow:hidden;
 }
+#last-modified {
+    position: relative;
+    left: 85%;
+}
 }
 
 /** Width between 768px to 991px
@@ -34,6 +38,11 @@
     overflow:hidden;
 }
   /* Navbar */
+  #last-modified{
+    position:absolute;
+    left:75%;
+    top:19%;
+}
   nav {
     padding: 10px 15px;
   }
@@ -192,6 +201,9 @@
     overflow:hidden;
 }
   /* Navbar */
+  #last-modified{
+    display:none;
+}
   nav {
     padding: 20px 15px;
   }
@@ -272,6 +284,9 @@
     overflow:hidden;
 }
   /* Navbar */
+  #last-modified{
+    display:none;
+}
   nav {
     padding: 20px 15px;
   }
@@ -350,6 +365,9 @@
     overflow:hidden;
 }
   /* Navbar */
+  #last-modified{
+    display:none;
+}
   nav {
     padding: 20px 15px;
   }

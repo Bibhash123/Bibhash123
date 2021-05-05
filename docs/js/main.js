@@ -174,3 +174,19 @@ $(window).load(function(){
   });
 
 })
+
+$(document).ready(function () {
+  if (document.getElementById('last-modified')) {
+    fetch("https://api.github.com/repos/bibhash123/bibhash123.github.io/commits?path=docs/index.html")
+      .then((response) => {
+        return response.json();
+      })
+      .then((commits) => {
+      console.log('update')
+        var modified = commits[0]['commit']['committer']['date'].slice(0,10);
+        if(modified != "{{ page.date | date: '%Y-%m-%d' }}") {
+          document.getElementById('last-modified').textContent = "Last Modified: "+'\n' + modified;
+        }
+      });
+  }
+});
