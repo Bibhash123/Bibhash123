@@ -182,7 +182,6 @@ $(document).ready(function () {
         return response.json();
       })
       .then((commits) => {
-      console.log('update')
         var modified = commits[0]['commit']['committer']['date'].slice(0,10);
         if(modified != "{{ page.date | date: '%Y-%m-%d' }}") {
           document.getElementById('last-modified').textContent = "Last Modified: "+'\n' + modified;
