@@ -12,11 +12,17 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .services-block{
-    height:15vh;
+    height:12vh;
     width:20vw;
     margin:10px;
     background: rgba(255,255,255,1);
     overflow:hidden;
+}
+.filler{
+width:100%;
+height:1px;
+background:rgba(0,0,0,0);
+margin-bottom: 2vh;
 }
 #last-modified {
     position: relative;
@@ -51,6 +57,7 @@
     display: none;
     float: none;
     width: 100%;
+    background:#fff;
   }
   .nav-menu li {
     float: none;
@@ -77,6 +84,7 @@
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
+    height:100%;
   }
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -97,7 +105,7 @@
   }
   /* Contact */
   .contact-contact {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   /* Footer */
   #footer .socials-media ul li {
@@ -114,12 +122,23 @@
 
 @media (max-width: 767px) {
 /* Services */
+
+#last-modified{
+    display:none;
+}
 .services-block{
-    height:25vh;
-    width:25vw;
+    height:16vh;
+    width:20vw;
     margin:8px;
     background: rgba(255,255,255,1);
     overflow:hidden;
+}
+
+.filler{
+width:100%;
+height:1px;
+background:rgba(0,0,0,0);
+margin-bottom:4vh;
 }
   /* Navbar */
   nav {
@@ -193,12 +212,22 @@
 
 @media (max-width: 600px) {
 /* Services */
+#last-modified{
+display:none;
+}
 .services-block{
-    height:24vh;
-    width:26vw;
+    height:16vh;
+    width:23vw;
     margin:10px;
     background: rgba(255,255,255,1);
     overflow:hidden;
+}
+
+.filler{
+width:100%;
+height:1px;
+background:rgba(0,0,0,0);
+margin-bottom:4vh;
 }
   /* Navbar */
   #last-modified{
@@ -212,6 +241,7 @@
     display: none;
     float: none;
     width: 100%;
+    background: #fff;
   }
   .nav-menu li {
     float: none;
@@ -276,12 +306,29 @@
 @media (max-width: 480px) {
 /* Services */
 .services-block{
-    height:25vh;
+    height:18vh;
     width:35vw;
     margin:10px;
-    margin-left:5vw;
     background: rgba(255,255,255,1);
     overflow:hidden;
+    margin-left:23vw;
+}
+.group{
+background:rgba(192, 196, 193,0.7);
+margin:2px;
+display:flex;
+flex-flow:row wrap;
+text-align:center;
+}
+.sm{
+height:500px;
+overflow:auto;
+}
+.filler{
+width:100%;
+height:1px;
+background:rgba(0,0,0,0);
+margin-bottom:5vh;
 }
   /* Navbar */
   #last-modified{
@@ -295,6 +342,7 @@
     display: none;
     float: none;
     width: 100%;
+    background: #fff;
   }
   .nav-menu li {
     float: none;
@@ -358,11 +406,28 @@
 @media (max-width: 320px) {
 /* Services */
 .services-block{
-    height:20vh;
+    height:14vh;
     width:40vw;
-    margin:5px;
+    margin-left:18vw;
     background: rgba(255,255,255,1);
     overflow:hidden;
+}
+.group{
+background:rgba(192, 196, 193,0.7);
+margin:2px;
+display:flex;
+flex-flow:row wrap;
+text-align:center;
+}
+.sm{
+height:500px;
+overflow:auto;
+}
+.filler{
+width:100%;
+height:1px;
+background:rgba(0,0,0,0);
+margin-bottom:25px;
 }
   /* Navbar */
   #last-modified{
@@ -376,6 +441,7 @@
     display: none;
     float: none;
     width: 100%;
+    background: #fff;
   }
   .nav-menu li {
     float: none;
