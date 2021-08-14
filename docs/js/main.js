@@ -98,7 +98,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Hi. I'M Bibhash Pran Das.", "Aspiring ML Engineer.", "Aspiring Data Scientist."],
+      strings: ["Hi. I'M Bibhash Pran Das.", "Student Researcher in Machine Learning", "Competitive ML Enthusiast"],
       typeSpeed: 30,
       loop: true,
     });
