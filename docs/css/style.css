@@ -319,13 +319,13 @@ background: rgba(0,0,0,0.6);
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #89d8f5;
   transition: 0.8s;
 }
+/*
 #about .div-img-bg:hover {
   transform: scale(1.1);
 }
-
+*/
 #about .div-img-bg .about-img img {
   width: 100%;
   box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
@@ -333,7 +333,6 @@ background: rgba(0,0,0,0.6);
   margin-left: 40px;
   height: 400px;
   object-fit: cover;
-  border: 10px solid #89d8f5;
 }
 
 #about .about-descr .p-heading {
