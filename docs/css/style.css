@@ -405,7 +405,9 @@ width:100%;
 height:1px;
 background:rgba(0,0,0,0);
 }
-
+.circular{
+border-radius:2em;
+}
 .services-block{
     height:20vh;
     width:10vw;
