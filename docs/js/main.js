@@ -126,7 +126,7 @@ $(document).ready(function() {
 
   var magnifPopup = function() {
     $('.popup-img').magnificPopup({
-      type: 'image',
+      type: 'html',
       removalDelay: 300,
       mainClass: 'mfp-with-zoom',
       gallery: {
