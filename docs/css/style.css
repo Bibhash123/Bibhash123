@@ -386,7 +386,7 @@ width:100%;
 }
 
 .group{
-background:rgba(192, 196, 193,0.7);
+/*background:rgba(192, 196, 193,0.7);*/
 margin:2px;
 display:flex;
 flex-flow:row wrap;
