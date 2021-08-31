@@ -295,14 +295,33 @@ background: rgba(0,0,0,0.6);
 }
 
 .header-content .list-social li {
-  float: left;
-  margin-right: 20px;
+  float: none;
+  display:inline;
+  margin-right: auto;
+  margin-left:auto;
 }
 
 .header-content .list-social li i {
   color: #fff;
   font-size: 15px;
 }
+
+.icon-btn{
+ border-radius:50%;
+ text-align:center;
+ height:20px;
+ width:25px;
+ margin-right:10px;
+ background:rgba(134, 240, 238,0.5);
+
+ transition: 0.3s;
+}
+
+.icon-btn:hover{
+background:rgba(0,0,0,0.7);
+}
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*  Aout-us
