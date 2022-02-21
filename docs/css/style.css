@@ -864,8 +864,8 @@ margin-left:auto;
 	stroke: #FFF;
 	fill: transparent;
 	stroke-width: 2px;
-	animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite;
+	animation: arrow 1.8s infinite;
+	-webkit-animation: arrow 1.8s infinite;
 }
 
 @keyframes arrow

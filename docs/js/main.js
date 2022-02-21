@@ -98,8 +98,8 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Hi. I'M Bibhash Pran Das.", "Student Researcher in Machine Learning", "Competitive ML Enthusiast"],
-      typeSpeed: 30,
+      strings: ["Machine Learning", "Competitive ML", "Software Development",  "Research"],
+      typeSpeed: 15,
       loop: true,
     });
   });
