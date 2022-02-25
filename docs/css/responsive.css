@@ -11,6 +11,10 @@
  */
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .cv-box{
+    height:700px;
+    width:800px;
+    }
   .services-block{
     height:12vh;
     width:20vw;
@@ -35,6 +39,11 @@ margin-bottom: 2vh;
  */
 
 @media (min-width: 768px) and (max-width: 991px) {
+.cv-box{
+height:700px;
+width:600px;
+}
+
 /* Services */
 .services-block{
     height:15vh;
@@ -75,6 +84,11 @@ margin-bottom: 2vh;
     display: block;
   }
   /* About */
+  .progress.skill
+    {
+    width:90%;
+    }
+
   .head-info .header-content .cmaster h1 {
     font-size: 32px;
   }
@@ -122,6 +136,10 @@ margin-bottom: 2vh;
 
 @media (max-width: 767px) {
 /* Services */
+.cv-box{
+height:700px;
+width:500px;
+}
 
 #last-modified{
     display:none;
@@ -166,6 +184,10 @@ margin-bottom:4vh;
     display: block;
   }
   /* About */
+  .progress.skill
+    {
+    width:90%;
+    }
   .head-info .header-content h1 {
     font-size: 32px;
   }
@@ -211,6 +233,11 @@ margin-bottom:4vh;
  */
 
 @media (max-width: 600px) {
+
+.cv-box{
+height:600px;
+width:400px;
+}
 /* Services */
 #last-modified{
 display:none;
@@ -259,6 +286,10 @@ margin-bottom:4vh;
     display: block;
   }
   /* About */
+  .progress.skill
+    {
+    width:90%;
+    }
   .head-info .header-content h1 {
     font-size: 32px;
   }
@@ -304,6 +335,10 @@ margin-bottom:4vh;
  */
 
 @media (max-width: 480px) {
+.cv-box{
+height:500px;
+width:350px;
+}
 /* Services */
 .services-block{
     height:18vh;
@@ -360,6 +395,10 @@ margin-bottom:5vh;
     display: block;
   }
   /* About */
+  .progress.skill
+    {
+    width:90%;
+    }
   .head-info .header-content h1 {
     font-size: 32px;
   }
@@ -404,6 +443,10 @@ margin-bottom:5vh;
  */
 
 @media (max-width: 320px) {
+.cv-box{
+height:400px;
+width:280px;
+}
 /* Services */
 .services-block{
     height:14vh;
@@ -458,7 +501,11 @@ margin-bottom:25px;
     padding-top: 15px;
     display: block;
   }
-  /* About */
+
+  /* ------------------------------------------------------------------
+  -----------------------------About ----------------------------------
+  ---------------------------------------------------------------------*/
+
   .head-info .header-content h1 {
     font-size: 32px;
   }
@@ -476,7 +523,14 @@ margin-bottom:25px;
     max-width: 100%;
     margin-bottom: 0;
   }
-  /* portfolio */
+
+  .progress.skill
+    {
+    width:90%;
+    }
+  /* ------------------------------------------------------------------
+  -----------------------------Protfolio ----------------------------------
+  ---------------------------------------------------------------------*/
   #portfolio .portfolio-list .nav li {
     float: none;
     margin: 20px;

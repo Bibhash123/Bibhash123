@@ -61,7 +61,7 @@ a:hover {
 }
 
 a:hover, a:focus {
-  color: blue;
+  color: #1a7ec9;
   text-decoration: underline;
 }
 
@@ -96,8 +96,8 @@ p {
 }
 
 ::selection {
-  background: blue;
-  color: #fff;
+  background: #1a7ec9;
+  color: #1a7ec9;
 }
 
 .btn {
@@ -126,7 +126,7 @@ p {
 
 .section-title h2 {
   font-size: 25px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -227,6 +227,26 @@ nav ul li a {
   text-transform: capitalize;
 }
 
+nav ul li a:hover::after{
+  position: absolute;
+  content: '';
+  width: 4rem;
+  bottom: -1rem;
+  left: 0rem;
+  background-color: #1a7ec9;
+  z-index: 100000;
+  height: 0.3rem;
+  animation: extend 0.4s ease-in-out;
+}
+
+@keyframes extend{
+0% {width:0rem};
+25% {width:1rem};
+50% {width:2rem};
+75% {width:3rem};
+100% {width:4rem};
+}
+
 .logo {
   float: left;
 }
@@ -241,8 +261,19 @@ nav ul li a {
   font-size: 23px;
 }
 
-.active {
-  color: blue;
+.active{
+color:#1a7ec9;
+}
+
+.active:after {
+  position: absolute;
+  content: '';
+  width: 4rem;
+  bottom: -1rem;
+  left: 0rem;
+  background-color: #1a7ec9;
+  z-index: 100000;
+  height: 0.3rem;
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -329,11 +360,20 @@ background:rgba(0,0,0,0.7);
 
 .me{
 }
+
 #about {
   width: 100%;
   height: auto;
   background: #f7f7f7;
   padding-top: 190px;
+}
+
+#about .section-title h2:before{
+    position:absolute;
+    content:'';
+    bottom: -14rem;
+    border-bottom: 5px solid blue;
+    width:100px;
 }
 
 #about .div-img-bg {
@@ -346,11 +386,12 @@ background:rgba(0,0,0,0.7);
 }
 */
 #about .div-img-bg .about-img img {
-  width: 100%;
+  width: 80%;
   box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: -60px;
-  margin-left: 40px;
-  height: 400px;
+  position:relative;
+  margin-top: 1%;
+  margin-left: 10%;
+  height: 80%;
   object-fit: cover;
 }
 
@@ -363,14 +404,55 @@ background:rgba(0,0,0,0.7);
   transition: 0.8s;
 }
 
-#about .about-descr:hover{
+/*#about .about-descr:hover{
 transform: scale(1.1);
 }
+*/
 #about .about-descr .separator {
   max-width: 80%;
   margin-bottom: 0;
   text-align: left;
 }
+
+#about .skill-box
+{
+}
+
+.progress.skill
+{
+width:120%;
+height:5px;
+position:relative;
+margin-left:auto;
+margin-right:auto;
+}
+
+#about .skill-box h5{
+color:black;
+}
+
+#about .skill-box div.category{
+color:black;
+width:auto;
+font-weight:10pt;
+display:inline;
+}
+
+.box-shadow-full {
+    padding: 3rem 1.25rem;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 3rem;
+    z-index: 2;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+    transition: 0.8s;
+  }
+
+.box-shadow-full:hover{
+transform: scale(1.1);
+}
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*   Services
@@ -897,4 +979,17 @@ margin-left:auto;
 .arrows path.a3 {
 	animation-delay:0s;
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+.cv-embed{
+height:100%;
+width:100%;
+position:absolute;
+top:0;
+left:0;
+}
+
+.cv-box{
+height:800px;
+width:900px;
 }

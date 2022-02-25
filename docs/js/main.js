@@ -99,7 +99,7 @@ $(document).ready(function() {
   $(function() {
     typed.typed({
       strings: ["Machine Learning", "Competitive ML", "Software Development",  "Research"],
-      typeSpeed: 15,
+      typeSpeed: -10,
       loop: true,
     });
   });
