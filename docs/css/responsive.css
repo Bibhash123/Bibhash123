@@ -436,6 +436,15 @@ margin-bottom:5vh;
     float: none;
     display: inline-block;
   }
+
+  /*contact*/
+  .social a{
+        font-size: 1.8rem;
+        padding-top:3rem;
+        padding-left:3rem;
+        padding-right:3rem;
+    }
+
 }
 
 /** Width between 320px to 0
@@ -555,4 +564,13 @@ margin-bottom:25px;
     display: inline-block;
     margin-right: 0;
   }
+  /*------------------------- Contact-----------------------*/
+
+    /*contact*/
+  .social a{
+        font-size: 1.3rem;
+        padding-top:3rem;
+        padding-left:3rem;
+        padding-right:3rem;
+    }
 }
