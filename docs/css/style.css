@@ -660,6 +660,19 @@ transform: scale(1.08);
   padding-bottom: 60px;
   position: relative;
 }
+
+.journal-txt{
+    text-align: center;
+}
+
+.read-more{
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    padding:5px;
+    margin:5px;
+    cursor: pointer;
+}
 /*-----------------------------------------------------------------------------------*/
 /*  Journal
 /*-----------------------------------------------------------------------------------*/
