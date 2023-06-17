@@ -10,10 +10,10 @@
 @media (min-width:992px){.container{max-width:960px}}
 @media (min-width:1200px){.container{max-width:1140px}}
 .n_container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
-@media (min-width:576px){.n_container{max-width:540px;margin-right:auto;margin-left:auto}}
-@media (min-width:768px){.n_container{max-width:720px;margin-right:auto;margin-left:auto}}
-@media (min-width:992px){.n_container{max-width:960px;margin-right:20%;margin-left:23%}}
-@media (min-width:1200px){.n_container{max-width:1140px;margin-right:20%;margin-left:23%}}
+@media (min-width:576px){.n_container{max-width:80%;margin-right:15%;margin-left:15%}}
+@media (min-width:768px){.n_container{max-width:80%;margin-right:15%;margin-left:15%}}
+@media (min-width:992px){.n_container{max-width:80%;margin-right:15%;margin-left:15%}}
+@media (min-width:1200px){.n_container{max-width:80%;margin-right:15%;margin-left:15%}}
 .n_journal-block{width:100%;}.n_journal-block .n_journal-info img {
     height: 20vh;
     width: 50%;

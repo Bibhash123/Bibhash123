@@ -98,7 +98,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Machine Learning", "Competitive ML", "Software Development",  "Research"],
+      strings: ["Machine Learning Enthusiast", "Competitive ML", "Software Developer"],
       typeSpeed: -10,
       loop: true,
     });
