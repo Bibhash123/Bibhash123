@@ -10,18 +10,22 @@ $(document).ready(function() {
   $(document).ready(onScroll)
   $(document).on("scroll", onScroll);
 
+  //
   $('a[href^="#"]').on('click', function(e) {
     e.preventDefault();
     $(document).off("scroll");
 
     $('a').each(function() {
-      $(this).removeClass('active');
+      $(this).removeClass('nav-active');
       if ($(window).width() < 768) {
         $('.nav-menu').slideUp();
       }
     });
 
-    $(this).addClass('active');
+    if (!e.target.classList.contains("dropdown-toggle")&&!e.target.classList.contains("dropdown-item"))
+    {
+        $(this).addClass('nav-active');
+    }
 
     var target = this.hash,
         menu = target;
@@ -35,6 +39,30 @@ $(document).ready(function() {
     });
   });
 
+  // nav button hover function except for experience dropdown
+  $("nav ul li a").hover(function(e){
+    if (!e.target.classList.contains("dropdown-toggle")&&!e.target.classList.contains("dropdown-item"))
+    {
+        $('nav ul li a').each(function() {
+          $(this).removeClass('nav-hover');
+        });
+        $(this).addClass('nav-hover');
+    }}, function(e){
+        if (!e.target.classList.contains("dropdown-toggle")&&!e.target.classList.contains("dropdown-item"))
+        {
+            $('nav ul li a').each(function(e) {
+              $(this).removeClass('nav-hover');
+            });
+        }
+  })
+
+  // dropdown-item hover
+  $('.dropdown-item').hover(function(e){
+    $('.dropdown-item').each(function(){$(this).removeClass('active')});
+    $(this).addClass('active');
+  },function(e){
+    $('.dropdown-item').each(function(){$(this).removeClass('active')});
+  })
 
   function onScroll(event) {
     if ($('.home').length) {
@@ -43,8 +71,8 @@ $(document).ready(function() {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if(scrollPos+$(window).height()/2 >= refElement.position().top &&  refElement.position().top + refElement.height() > scrollPos){
-            $('nav ul li a').removeClass('active')
-            currLink.addClass('active');
+            $('nav ul li a').removeClass('nav-active')
+            currLink.addClass('nav-active');
             document.activeElement.blur();
 
             if(currLink.attr('href')!='#header'){
@@ -59,7 +87,7 @@ $(document).ready(function() {
             }
          }
          else{
-            currLink.removeClass('active');
+            currLink.removeClass('nav-active');
          }
       });
     }
@@ -98,8 +126,8 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Machine Learning Enthusiast", "Competitive ML", "Software Developer"],
-      typeSpeed: -10,
+      strings: ["Software Engineer", "Machine Learning Enthusiast", "Competitive ML Practitioner"],
+      typeSpeed: 30,
       loop: true,
     });
   });
@@ -173,19 +201,4 @@ $(window).load(function(){
     portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
 
-})
-
-$(document).ready(function () {
-  if (document.getElementById('last-modified')) {
-    fetch("https://api.github.com/repos/bibhash123/bibhash123.github.io/commits?path=docs/index.html")
-      .then((response) => {
-        return response.json();
-      })
-      .then((commits) => {
-        var modified = commits[0]['commit']['committer']['date'].slice(0,10);
-        if(modified != "{{ page.date | date: '%Y-%m-%d' }}") {
-          document.getElementById('last-modified').textContent = "Last Modified: "+'\n' + modified;
-        }
-      });
-  }
 });
